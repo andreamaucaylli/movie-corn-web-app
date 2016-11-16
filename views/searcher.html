@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Movie Corn</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
+	<link type="text/css" rel="stylesheet" href="css/main.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans Condensed:300italic,300,700" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div data-role="page" id="pageone" class="bg-blue">
+		<div data-role="panel" id="myPanel">
+			<div class="contenedor-img">
+				<img alt="tu foto" id="foto-perfil">
+				<p id="nombre"></p>
+			</div>
+			<a href="../public/chat.html"><p class="chat chat-last"><i class="glyphicon glyphicon-comment"></i> Chat</p></a>
+			<p class="chat"><i class="glyphicon glyphicon-home"></i> Home</p>
+			<p class="chat"><i class="glyphicon glyphicon-facetime-video"></i> Movies</p>
+			<p class="chat"><i class="glyphicon glyphicon-expand"></i> Series</p>
+			<p class="chat"><i class="glyphicon glyphicon-screenshot"></i> Genres</p>
+		</div>
+		<div data-role="main" class="ui-content">
+			<a href="#myPanel">
+				<i class="bg-white glyphicon glyphicon-menu-right"></i>
+			</a>
+			<div class="contenedor-searcher">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="bs-component">
+							<form class="well form-search" id="search-by-title-form" onsubmit="return false;">
+								<div>
+									<label class="control-label" for="titulo">Search your movie by title:</label>
+									<input type="text" id="titulo" name="t" class="input-small" placeholder="Write your movie">
+									<select class="display-none" name="plot">
+										<option value="short" selected="">Short</option>
+										<option value="full">Full</option>
+									</select>
+									<button id="search-by-title-button" type="button" class="btn-sm btn-primary">Search</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="conten">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
+
